@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <!-- Expanded UI with new elements for advanced features -->
+  <requires lib="gtk+" version="3.24"/>
+  <object class="GtkApplicationWindow" id="main_window">
+    <property name="title">OpenVPN3 Professional</property>
+    <property name="default-width">800</property>
+    <property name="default-height">600</property>
+    <child>
+      <!-- Complex UI with notebook containing multiple sections -->
+      <object class="GtkNotebook" id="main_notebook">
+        <child>
+          <object class="GtkBox" id="connection_tab">
+            <!-- Connection management elements -->
+          </object>
+        </child>
+        <child>
+          <object class="GtkBox" id="logging_tab">
+            <!-- Logging controls and viewer -->
+          </object>
+        </child>
+        <child>
+          <object class="GtkBox" id="advanced_tab">
+            <!-- Advanced settings and auto-reconnect -->
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
